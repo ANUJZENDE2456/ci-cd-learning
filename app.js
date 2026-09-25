@@ -13,4 +13,8 @@ app.get("/hello",(req,res)=>{
 
 });
 
+app.get('/status',(req,res)=>{
+    res.json({status:"running"});
+});
+
 module.exports=app;
