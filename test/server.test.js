@@ -16,5 +16,5 @@ test('hello API should return Hello World message',async()=>{
 test('status API should return running status',async()=>{
     const response= await request(app).get('/status');
     expect(response.status).toBe(200);
-    expect(response.body).toEqual({status:"running"});
+    expect(response.body).toEqual({status:"FAILED"});
 });
